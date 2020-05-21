@@ -23,13 +23,13 @@ get() {
 set() {
    local option=$1
    local value=$2
-   tmux set-option -gq "$option" "$value"
+   tmux set-option -q "$option" "$value"
 }
 
 setw() {
    local option=$1
    local value=$2
-   tmux set-window-option -gq "$option" "$value"
+   tmux set-window-option -q "$option" "$value"
 }
 
 set "status" "on"
